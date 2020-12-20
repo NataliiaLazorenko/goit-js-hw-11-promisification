@@ -8,7 +8,7 @@
 
     const logger = time => console.log(`Resolved after ${time}ms`);
 
-    // Виклич функції для перевірки
+    // Викликати функції для перевірки
     delay(2000).then(logger); // Resolved after 2000ms
     delay(1000).then(logger); // Resolved after 1000ms
     delay(1500).then(logger); // Resolved after 1500ms
@@ -83,6 +83,7 @@
     makeTransaction({ id: 71, amount: 230 }, logSuccess, logError);
     makeTransaction({ id: 72, amount: 75 }, logSuccess, logError);
     makeTransaction({ id: 73, amount: 100 }, logSuccess, logError);
+
     /*
      * Повинно працювати так
      */
