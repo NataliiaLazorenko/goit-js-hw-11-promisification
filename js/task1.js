@@ -1,5 +1,3 @@
-console.log("%cTask 1", "color: blue; font-weight: 600");
-
 const delay = (ms) => {
   return new Promise((resolve) => {
     setTimeout(() => {
@@ -8,7 +6,8 @@ const delay = (ms) => {
   });
 };
 
-const logger = (time) => console.log(`Resolved after ${time}ms`);
+const logger = (time) =>
+  console.log(`%cResolved after ${time}ms`, "color: blue");
 
 delay(2000).then(logger); // Resolved after 2000ms
 delay(1000).then(logger); // Resolved after 1000ms
